@@ -1,4 +1,15 @@
+<?php
 
+class Account {
+    private $first_name;
+    private $last_name;
+    private $email;
+    private $password;
+    
+    pulic 
+}
+
+?>
 
 class Account:
     fname = None
