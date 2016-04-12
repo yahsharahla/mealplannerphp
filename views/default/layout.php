@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="{{=T.accepted_language or 'en'}}"> <!--<![endif]-->
   <head>
+      
     <meta charset="utf-8">
     <!-- www.phpied.com/conditional-comments-block-downloads/ -->
     <!-- Always force latest IE rendering engine
@@ -20,7 +21,7 @@
          http://google.com/webmasters -->
     <meta name="google-site-verification" content="">
     <!-- include stylesheets -->
-    <link rel="stylesheet" href="{{=URL('static','css/bootstrap.min.css')}}"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="{{=URL('static','css/web2py-bootstrap3.css')}}"/>
     <link rel="stylesheet" href="{{=URL('static','css/custom.css')}}"/>
     <link rel="shortcut icon" href="{{=URL('static','images/favicon.ico')}}" type="image/x-icon">
@@ -73,6 +74,12 @@
     <!-- Masthead ===================================== -->    
     {{block header}}
     {{end}}
+      
+      <?php
+      
+      require_once('routes.php');
+      
+      ?>
     <!-- Main ========================================= -->
     <!-- Begin page content -->
     <div class="container-fluid main-container">
