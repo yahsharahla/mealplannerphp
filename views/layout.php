@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
       <!-- Latest jQuery form server -->
-    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
@@ -27,17 +27,13 @@
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/style1.css">
     <link rel="stylesheet" href="static/css/responsive.css">
-    
-    
-    <link rel="stylesheet" href="static/css/bootstrap-theme.min.css' ?>">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://dl.dropbox.com/s/l9f05kxmtvcqr1b/font-awesome.min.css">
     <link rel="stylesheet" href="https://dl.dropbox.com/s/4zc2utw8dkq0qjm/fonts.css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="<?php echo 'http://' . $_SERVER['SERVER_NAME'] . '/cxc/phaseshift/js/jquery.min.js'?>"></script>
     <script src="https://dl.dropbox.com/s/yoq4hyd27a0s0kr/bootstrap.min.js"></script>
+    <script src="static/js/view.js"></script>
     <!--script src="<!?php echo 'http://' . $_SERVER['SERVER_NAME'] . '/cxc/phaseshift/js/jquery.dropotron.min.js'?>"></script>
     <script src="<!?php echo 'http://' . $_SERVER['SERVER_NAME'] . '/cxc/phaseshift/js/skel.min.js'?>"></script>
     <script src="<!?php echo 'http://' . $_SERVER['SERVER_NAME'] . '/cxc/phaseshift/js/skel-layers.min.js'?>"></script>
@@ -218,7 +214,7 @@
     <!-- End footer area -->
    
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery.min.js"></script>
+    
     
     <!-- Bootstrap JS -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
