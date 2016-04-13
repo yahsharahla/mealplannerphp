@@ -109,7 +109,7 @@
                                  </div>
                              <li><a href="?controller=pages&action=index">Home</a></li>
                              <li><a href="?controller=pages&action=about">How it Works</a></li>
-                             <li><a href="#">Create Meal</a></li>
+                             <li><a href="?controller=pages&action=addmeal">Create Meal</a></li>
                              <li><a href="?controller=pages&action=user">Login</a></li>
                         </ul>
                         <?php 
