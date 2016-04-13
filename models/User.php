@@ -9,8 +9,16 @@ class User {
         $this->account = null;
     }
     
-    public function create_meal(){
-        //TODO: Implement here
+    public function getUserId(){
+        return $this->userId;
+    }
+    
+    public function setAccount($account){
+        $this->account = $account;
+    }
+    
+    public function getAccount(){
+        return $this->account;
     }
 }
 
