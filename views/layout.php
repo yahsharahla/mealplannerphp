@@ -113,11 +113,14 @@
                              <li><a href="?controller=pages&action=user">Login</a></li>
                         </ul>
                         <?php 
-                            if isset(_SESSION[""])
+                            if (isset($_SESSION['user'])){
+                                $user = $_SESSION['user'];
+                                    $name = $user->getAccount->getFirstName + ' ' $user->getAccount->getLastName
+                                echo '<ul class="nav navbar-nav pull-right">
+                                <li class="active">Welcome $name</li>
+                                </ul>'
+                            }
                         ?>
-                        <ul class="nav navbar-nav pull-right">
-                            <li class="active">Welcome</li>
-                        </ul>
                     </div>
                </div>
                 
