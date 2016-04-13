@@ -4,15 +4,15 @@
         public function login(){
             $email = $_POST['email'];
             $password = $_POST['password'];
-            hash = sha1($password);
-            $user = new User($username, $password);
-            $sql = "select * from account where email='$email';";
+            $hash = sha1($password);
+            //$time = round(microtime(true) * 1000);
+            //$user = new User($time);
+            $sql = "select * from account where email='$email' and password_hash='$hash';";
             $database = new Database('localhost', 'meal_planner', 'root', '');
             if (gettype($database->get_db()) != 'int'){
                 $result = $database->query($sql);
                 $result = count($result);
                 if ($result > 0) {
-                    $database = new Database('localhost', 'pdo_ret', 'root', '');
                     $sql = "select * from account natural join shipping_address
                     natural join address where username='$username';";
                     $result = $database->query($sql);
@@ -98,11 +98,11 @@
                 } else {
                     $_SESSION['incorrect'] = 'yes';
                     echo '<script>alert(\'Incorrect username or password\');
-                    window.location.href = "?controller=pages&action=login";</script>';
+                    window.location.href = "?controller=pages&action=user";</script>';
                 }
             } else {
                  echo '<script>alert(\'Unknown error occurred\');
-                    window.location.href = "?controller=pages&action=login";</script>';
+                    window.location.href = "?controller=pages&action=user";</script>';
             }
     }
         
