@@ -85,6 +85,12 @@ h6 {
     text-align: center;
 }
 
+#loggedin {
+    color: #1abc9c;
+    font-weight: bold;
+    font-size: 18px;
+}
+
 #calories {
     width: 222px;
     border-radius: 10px;

@@ -116,14 +116,13 @@
                             if (isset($_SESSION['user'])){
                                 $user = $_SESSION['user'];
                                 $name = $user->getAccount()->getFirstName() . '  ' . $user->getAccount()->getLastName();
-                                echo '<ul class="nav navbar-nav pull-right">
-                                <li class="active">Welcome '. $name.'</li>
-                                </ul>';
-                                echo '<button id="logout" class="btn btn-warning nav navbar-nav pull-right" onclick="javascript:window.location.href= \'?controller=control&action=logout\';">Logout</button>';
+                                echo '<div class="nav navbar-nav pull-right">
+                                <p id="loggedin" class="active">Welcome '. $name . ' 
+                                </p>
+                                <button id="logout" type="button" class="btn btn-success" onclick="javascript:window.location.href= \'?controller=control&action=logout\';">Log Out</button>';
                             }
                         
                         ?>
-                        
                     </div>
                </div>
                 
