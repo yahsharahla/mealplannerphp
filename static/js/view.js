@@ -1,5 +1,5 @@
 $(function(){
-    $("#user-register").hide();
+//    $("#user-register").hide();
     $("#reg").click(loadReg);
 //    $("#reg").css('cursor', 'pointer');
 });

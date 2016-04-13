@@ -98,6 +98,10 @@ h6 {
     cursor: pointer;
 }
 
+#user-register {
+    display: none;
+}
+
 .mainmenu-area {background: none repeat scroll 0 0 #1abc9c;
 font-family: "Roboto Condensed",sans-serif;
 text-transform: uppercase;
