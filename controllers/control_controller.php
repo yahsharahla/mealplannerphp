@@ -8,12 +8,12 @@
             $hash = sha1($password);
             $database = new Database('localhost', 'meal_planner', 'root', '');
             if (gettype($database->get_db()) != 'int'){
-                $sql = "select * from user natural join create_account natural join
+                $sql = "select * from users natural join create_account natural join
                 account where email='$email' and password_hash='$hash';";
                 $result = $database->query($sql);
                 if (count($result) > 0) {
                     $result = $result[0];
-                    $account = new Account($result[3]. $result[4], $email, $password, $result[0]);
+                    $account = new Account($result[3], $result[4], $email, $password, $result[0]);
                     $user = new User($result[1]);
                     $user->setAccount($account);
                     $_SESSION['user'] = $user;
@@ -43,37 +43,40 @@
             $first_name = $_POST['first_name'];
             $last_name = $_POST['last_name'];
             $password = $_POST['password'];
-            $preferred_calories = $_POST['calories'];
+            $preferred_calories = intval($_POST['calories']);
             $hash = sha1($password);
             $database = new Database('localhost', 'meal_planner', 'root', '');
             $user = $_SESSION['anonuser'];
             if (gettype($database->get_db()) != 'int'){
                 $database->beginTransaction();
                 $userId = $user->getUserId();
-                $sql = "insert into user values('$userId');";
+                $sql = "insert into users values('$userId');";
                 $result = $database->update($sql);
+                echo $result;
                 if ($result < 0){
                     $database->rollbackUpdate();
-                    echo '<script>alert(\'Unknown error occurred\');
+                    /*echo '<script>alert(\'Unknown error occurred\');
                     window.location.href = "?controller=pages&action=user";</script>';
-                    return;
+                    return;*/
                 }
-                $sql = "insert into account values($preferred_calories, '$first_name, 
+                $sql = "insert into account values($preferred_calories, '$first_name', 
                 '$last_name', '$email', '$hash');";
                 $result = $database->update($sql);
+                echo $result;
                 if ($result < 0){
                     $database->rollbackUpdate();
-                    echo '<script>alert(\'Unknown error occurred\');
+                    /*echo '<script>alert(\'Unknown error occurred\');
                     window.location.href = "?controller=pages&action=user";</script>';
-                    return;
+                    return;*/
                 }
                 $sql = "insert into create_account values('$userId', '$email');";
                 $result = $database->update($sql);
+                echo $result;
                 if ($result < 0){
                     $database->rollbackUpdate();
-                    echo '<script>alert(\'Unknown error occurred\');
+                    /*echo '<script>alert(\'Unknown error occurred\');
                     window.location.href = "?controller=pages&action=user";</script>';
-                    return;
+                    return;*/
                 } else {
                     $database->commitChanges();
                 }
