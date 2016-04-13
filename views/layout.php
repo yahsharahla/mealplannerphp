@@ -117,8 +117,7 @@
                                 $user = $_SESSION['user'];
                                 $name = $user->getAccount()->getFirstName() . ' ' . $user->getAccount()->getLastName();
                                 echo '<ul class="nav navbar-nav pull-right">
-                                <li class="active">Welcome $name</li>
-                                </ul>';
+                                <li class="active">Welcome ' . $name . '</li></ul>';
                             }
                         ?>
                     </div>
