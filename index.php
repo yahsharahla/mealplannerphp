@@ -8,9 +8,6 @@ require_once ('models/plan.php');
   require_once ('models/recipe.php');
 require_once ('models/fooditem.php');*/
   session_start();
-$time = round(microtime(true) * 1000);
-$user = new User($time);
-$_SESSION['newuser'] = $user;
   if (isset($_GET['controller']) && isset($_GET['action'])) {
     $controller = $_GET['controller'];
     $action     = $_GET['action'];
