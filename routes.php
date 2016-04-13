@@ -27,7 +27,7 @@
   // we consider those "allowed" values
   $controllers = array('pages' => ['index', 'error', 'about', 'addmeal', 'foodspace',
                                    'generate', 'groceries', 'user'],
-                        'control' => ['login', 'register']);
+                        'control' => ['login', 'register', 'logout']);
 
   // check that the requested controller and action are both allowed
   // if someone tries to access something else he will be redirected to the error action of the pages controller
