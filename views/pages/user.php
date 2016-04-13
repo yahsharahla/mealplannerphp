@@ -1,33 +1,42 @@
-<h2 class="center">
-{{=T('Sign Up') if request.args(0) == 'register' else T('Log In') if request.args(0) == 'login' else T(request.args(0).replace('_',' ').title())}}
-</h2>
+	<!-- === BEGIN CONTENT === -->
+		<div id="content" class="container">
+			<div class="container">
+				<div class="row margin-vert-30">
+					<!-- Login Box -->
+					<div class="col-md-6 col-md-offset-3 col-sm-offset-3">
+						<form class="login-page" role="form" method="post" action="?controller=control&action=login"  autocomplete="off">
+							<div class="login-header margin-bottom-30">
+								<h1>Login to your account</h1>
+                                <form id="login-form-wrap" class="login collapse" method="post">
 
-<div class="container-fluid">
-    <div class="row">
-        <div id="web2py_user_form" class="col-md-4 col-md-offset-4">
-        {{
-        if request.args(0)=='login':
-            if not 'register' in auth.settings.actions_disabled:
-                form.add_button(T('Sign Up'),URL(args='register', vars={'_next': request.vars._next} if request.vars._next else None),_class='btn btn-default')
-            pass
-            if not 'request_reset_password' in auth.settings.actions_disabled:
-                form.add_button(T('Lost Password'),URL(args='request_reset_password'),_class='btn btn-default')
-            pass
-        pass
-        =form
-        }}
-        </div>
-    </div>
-</div>
+                                    <p class="form-row form-row-first">
+                                        <label for="email">Email Address <span class="required">*</span>
+                                        </label>
+                                        <input type="email" id="username"  placeholder="someone@example.com"  name="email" class="input-text">
+                                    </p>
+                                    <p class="form-row form-row-last">
+                                        <label for="password">Password <span class="required">*</span>
+                                        </label>
+                                        <input type="password" id="password" name="password" class="input-text" placeholder="Password">
+                                    </p>
+                                    <div class="clear"></div>
 
 
-{{block page_js}}
-<script>
-    jQuery("#web2py_user_form input:visible:enabled:first").focus();
-{{if request.args(0)=='register':}}
-    web2py_validate_entropy(jQuery('#auth_user_password'),100);
-{{elif request.args(0)=='change_password':}}
-    web2py_validate_entropy(jQuery('#no_table_new_password'),100);
-{{pass}}
-</script>
-{{end page_js}}
+                                    <p class="form-row">
+                                        <input type="submit" class="btn" value="Login" name="submit">
+                                    </p>
+                                    <p class="lost_password">
+                                        <a href="?controller=pages&action=reset">Lost your password?</a>
+                                    </p>
+
+                                    <div class="clear"></div>
+                                </form>
+                            </div>
+                        </form>
+						<p><a href="?controller=pages&action=signup"> Create an Account </a></p>
+					</div>
+					<!-- End Login Box -->
+				</div>
+			</div>
+		</div>
+		<!-- === END CONTENT === -->

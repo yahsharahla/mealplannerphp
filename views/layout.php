@@ -28,6 +28,27 @@
     <link rel="stylesheet" href="static/css/style1.css">
     <link rel="stylesheet" href="static/css/responsive.css">
     
+    
+    <link rel="stylesheet" href="static/css/bootstrap-theme.min.css' ?>">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://dl.dropbox.com/s/l9f05kxmtvcqr1b/font-awesome.min.css">
+    <link rel="stylesheet" href="https://dl.dropbox.com/s/4zc2utw8dkq0qjm/fonts.css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="<?php echo 'http://' . $_SERVER['SERVER_NAME'] . '/cxc/phaseshift/js/jquery.min.js'?>"></script>
+    <script src="https://dl.dropbox.com/s/yoq4hyd27a0s0kr/bootstrap.min.js"></script>
+    <!--script src="<!?php echo 'http://' . $_SERVER['SERVER_NAME'] . '/cxc/phaseshift/js/jquery.dropotron.min.js'?>"></script>
+    <script src="<!?php echo 'http://' . $_SERVER['SERVER_NAME'] . '/cxc/phaseshift/js/skel.min.js'?>"></script>
+    <script src="<!?php echo 'http://' . $_SERVER['SERVER_NAME'] . '/cxc/phaseshift/js/skel-layers.min.js'?>"></script>
+    <script src="<!?php echo 'http://' . $_SERVER['SERVER_NAME'] . '/cxc/phaseshift/js/init.js'?>"></script>
+    <script src="<!?php echo 'http://' . $_SERVER['SERVER_NAME'] . '/cxc/index.js' ?>"></script-->
+    <noscript>
+        <link rel="stylesheet" href="static/css/skel.css'?>">
+        <link rel="stylesheet" href="static/css/style.css'?>">
+        <link rel="stylesheet" href="static/css/style-wide.css'?>">
+    </noscript>
+    
 </head>
 <body>
 
@@ -111,20 +132,18 @@
     
     <!-- === CONTENT === -->
     <hr>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
+<br/><br/>
     <!--h1 style="text-align:center;">Dynamic content here</h1-->
     <?php
         require_once('routes.php');
     ?>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
+<br/><br/>
     <hr>
     <!-- === END CONTENT === -->
     
     <!-- === BEGIN FOOTER === -->
     
-    <div class="footer-top-area">
+    <!--div class="footer-top-area">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
@@ -143,7 +162,7 @@
                             <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
                             <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
                         </div>
-                    </div-->
+                    </div>
                     <h1>Footer <br>Area<br> 1</h1>
                 </div>
                 
@@ -158,7 +177,7 @@
                             <li><a href="?controller=pages&action=about">About Us</a></li>
 
                         </ul>                        
-                    </div-->
+                    </div>
                     <h1>Footer <br>Area<br> 2</h1>
                 </div>
                 
@@ -172,7 +191,7 @@
                             <li><a href="#">Brakes</a></li>
                             <li><a href="#">Accessories</a></li>
                         </ul>                        
-                    </div-->
+                    </div>
                     <h1>Footer <br>Area<br> 3</h1>
                 </div>
                 
@@ -187,7 +206,7 @@
                                 <input type="submit" value="Subscribe" name="Subscribe">
                             </form>
                         </div>
-                    </div-->
+                    </div>
                     <h1>Footer <br>Area<br> 4</h1>
                 </div>
             </div>

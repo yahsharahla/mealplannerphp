@@ -14,6 +14,10 @@ class Database {
         }
     }
     
+    public function get_db(){
+        return $this->db;
+    }
+    
      public function query($sql){
          try {
             $stmt = $this->db->prepare($sql);
