@@ -1,7 +1,7 @@
 <?php
 
 class Database {
-    db = '';
+    private $db = '';
     
     public function __construct($host, $dbname, $user, $pass){
         try{

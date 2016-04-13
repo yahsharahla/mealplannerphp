@@ -4,8 +4,9 @@ class User {
     private $userId;
     private $account;
     
-    public function __construct($fname, $lname, $email, $password){
-        $this->account = Account($fname, $lname, $email, $password);
+    public function __construct($userId){
+        $this->userId = $userId;
+        $this->account = null;
     }
     
     public function create_meal(){

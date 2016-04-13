@@ -6,19 +6,12 @@ class Account {
     private $email;
     private $password;
     
-    pulic 
+    public function __construct($fname, $lname, $email, $password){
+        $this->first_name = $fname;
+        $this->last_name = $lname;
+        $this->email = $email;
+        $this->password = $password;
+    }
 }
 
 ?>
-
-class Account:
-    fname = None
-    lname = None
-    email = None
-    password = None
-
-    def __init__(self, fname, lname, email, password):
-        self.fname = fname
-        self.lname = lname
-        self.email = email
-        self.password = password

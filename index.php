@@ -1,8 +1,8 @@
 <?php
-  /*require_once('models/database.php');
+  require_once('models/database.php');
   require_once ('models/user.php');
   require_once ('models/account.php');
-  require_once ('models/shoppinglist.php');
+  /*require_once ('models/shoppinglist.php');
   require_once ('models/meal.php');
 require_once ('models/plan.php');
   require_once ('models/recipe.php');

@@ -48,7 +48,6 @@
         <link rel="stylesheet" href="static/css/style.css'?>">
         <link rel="stylesheet" href="static/css/style-wide.css'?>">
     </noscript>   
-
 </head>
 <body>
 <div id="body">
@@ -132,16 +131,12 @@
     
     <!-- === CONTENT === -->
     <hr>
-<br/><br/>
 
     <!--h1 style="text-align:center;">Dynamic content here</h1-->
     <div class="container">
     <?php
         require_once('routes.php');
     ?>
-<br/><br/>
-
-    <br><br>
     </div>
 
     <hr>
