@@ -1,12 +1,16 @@
 	<!-- === BEGIN CONTENT === -->
+<h1 class="heading">Login to your account</h1>
 		<div id="content" class="container">
 			<div class="container">
+                
 				<div class="row margin-vert-30">
+                    
 					<!-- Login Box -->
 					<div class="col-md-6 col-md-offset-3 col-sm-offset-3">
+                        
 						<form class="login-page" role="form" method="post" action="?controller=control&action=login"  autocomplete="off">
 							<div class="login-header margin-bottom-30">
-								<h1>Login to your account</h1>
+								
                                 <form id="login-form-wrap" class="login collapse" method="post">
 
                                     <p class="form-row form-row-first">

@@ -109,7 +109,7 @@
                     <div class="">
                          <ul class="nav navbar-nav pull-left">
                              <div class="logo">
-                             <li class="active"><h1><a href="#"><span>Cheffinz<sup>TM</sup></span></a></h1></li>
+                             <li class="active"><h1><a href="#"><span>Cheffinz<sup>&trade;</sup></span></a></h1></li>
                                  </div>
                              <li><a href="?controller=pages&action=index">Home</a></li>
                              <li><a href="?controller=pages&action=about">How it Works</a></li>
