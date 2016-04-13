@@ -16,6 +16,8 @@ class Account {
         $this->email = $email;
         $this->password = $password;
         $this->preferred_calories = $calories;
+        $this->ingredients_in_kitchen = array();
+        $this->list_of_meals = array();
     }
     
     public function addToList($meal){
@@ -30,6 +32,38 @@ class Account {
     
     public function getList(){
         return $this->list_of_meals;
+    }
+    
+    public function getFirstName(){
+        return $this->first_name;
+    }
+    
+    public function getLastName(){
+        return $this->last_name;
+    }
+    
+    public function setFirstName($name){
+        $this->first_name = $name;
+    }
+    
+    public function setLastName($name){
+        $this->last_name = $name;
+    }
+    
+    public function getEmail(){
+        return $this->email;
+    }
+    
+    public function setEmail($email){
+        $this->email = $email;
+    }
+    
+    public function getCalories(){
+        return $this->preferred_calories;
+    }
+    
+    public function setCalories($calories){
+        $this->preferred_calories = $calories;
     }
 }
 
