@@ -106,6 +106,28 @@
             }
     }
         
+        public function logout(){
+            //TODO: Implement here
+        }
+        
+        public function createaccount(){
+            //TODO: Implement here
+        }
+        
+        public function createmeal(){
+            //TODO: Implement here
+        }
+        
+        public function createplan(){
+            //TODO: Implement here
+        }
+        
+        public function randommeal(){
+            //TODO: Implement here
+        }
+        
+        
+        
         
     }
 ?>
