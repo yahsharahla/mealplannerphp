@@ -115,12 +115,15 @@
                         <?php 
                             if (isset($_SESSION['user'])){
                                 $user = $_SESSION['user'];
-                                $name = $user->getAccount()->getFirstName() . ' ' . $user->getAccount()->getLastName();
+                                $name = $user->getAccount()->getFirstName() . '  ' . $user->getAccount()->getLastName();
                                 echo '<ul class="nav navbar-nav pull-right">
-                                <li class="active">Welcome $name</li>
+                                <li class="active">Welcome '. $name.'</li>
                                 </ul>';
+                                echo '<button id="logout" class="btn btn-warning nav navbar-nav pull-right" onclick="javascript:window.location.href= \'?controller=control&action=logout\';">Logout</button>';
                             }
+                        
                         ?>
+                        
                     </div>
                </div>
                 
