@@ -27,7 +27,6 @@ h6 {
     font-weight: 700;
     margin: 0 0 15px;
 }
-body { font-family: 'Titillium Web', sans-serif; }
 
 
 
@@ -592,8 +591,11 @@ width: 10px;
     margin-bottom: 50px;
 }
 input[type="text"], input[type="password"], input[type="email"], textarea {
-    border: 1px solid #ddd;
     padding: 10px;
+    height: 42px;
+    border: 1px solid #1abc9c;
+    border-radius: 10px;
+    width: 222px;
 }
 input[type="submit"], button[type=submit] {
     background: none repeat scroll 0 0 #1abc9c;

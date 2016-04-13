@@ -27,9 +27,20 @@ h6 {
     font-weight: 700;
     margin: 0 0 15px;
 }
-body { font-family: 'Titillium Web', sans-serif; }
+#body { 
+    font-family: 'Titillium Web', sans-serif;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
 
-
+.heading {
+    background:rgba(0,100,100,0.25);
+    color: #1abc9c;
+    border-radius: 10px;
+    text-align: center;
+}
 
 .header-area {
     background: none repeat scroll 0 0 #f4f4f4;
@@ -72,6 +83,23 @@ body { font-family: 'Titillium Web', sans-serif; }
     margin-left: -50px;
     min-width: 100px;
     text-align: center;
+}
+
+#calories {
+    width: 222px;
+    border-radius: 10px;
+    height: 42px;
+    border: 1px solid #1abc9c;
+    padding-left: 10px; 
+}
+
+#reg {
+    color: #1abc9c;
+    cursor: pointer;
+}
+
+#user-register {
+    display: none;
 }
 
 .mainmenu-area {background: none repeat scroll 0 0 #1abc9c;
@@ -1031,4 +1059,11 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
 
 }
 
+.required {
+    color: red;
+}
+
+.in {
+    padding-left: 15px;
+}
 

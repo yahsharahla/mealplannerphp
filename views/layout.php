@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
       <!-- Latest jQuery form server -->
-    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
@@ -23,22 +23,17 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     
     <!-- Custom CSS -->
-
     <link rel="stylesheet" href="static/css/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/style1.css">
     <link rel="stylesheet" href="static/css/responsive.css">
-    
-    
-    <link rel="stylesheet" href="static/css/bootstrap-theme.min.css' ?>">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://dl.dropbox.com/s/l9f05kxmtvcqr1b/font-awesome.min.css">
     <link rel="stylesheet" href="https://dl.dropbox.com/s/4zc2utw8dkq0qjm/fonts.css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="<?php echo 'http://' . $_SERVER['SERVER_NAME'] . '/cxc/phaseshift/js/jquery.min.js'?>"></script>
     <script src="https://dl.dropbox.com/s/yoq4hyd27a0s0kr/bootstrap.min.js"></script>
+    <script src="static/js/view.js"></script>
     <!--script src="<!?php echo 'http://' . $_SERVER['SERVER_NAME'] . '/cxc/phaseshift/js/jquery.dropotron.min.js'?>"></script>
     <script src="<!?php echo 'http://' . $_SERVER['SERVER_NAME'] . '/cxc/phaseshift/js/skel.min.js'?>"></script>
     <script src="<!?php echo 'http://' . $_SERVER['SERVER_NAME'] . '/cxc/phaseshift/js/skel-layers.min.js'?>"></script>
@@ -48,13 +43,10 @@
         <link rel="stylesheet" href="static/css/skel.css'?>">
         <link rel="stylesheet" href="static/css/style.css'?>">
         <link rel="stylesheet" href="static/css/style-wide.css'?>">
-    </noscript>
-    
-    <link rel="stylesheet" href="static/css/web2py.css">    
-
+    </noscript>   
 </head>
 <body>
-
+<div id="body">
     
             <!-- Top Menu -->
          <div class="header-area">
@@ -113,7 +105,7 @@
                     <div class="">
                          <ul class="nav navbar-nav pull-left">
                              <div class="logo">
-                             <li class="active"><h1><a href="#"><span>Cheffinz<sup>TM</sup></span></a></h1></li>
+                             <li class="active"><h1><a href="#"><span>Cheffinz<sup>&trade;</sup></span></a></h1></li>
                                  </div>
                              <li><a href="?controller=pages&action=index">Home</a></li>
                              <li><a href="?controller=pages&action=about">How it Works</a></li>
@@ -136,20 +128,15 @@
     <!-- === CONTENT === -->
     <hr>
 
-<br/><br/>
-
     <!--h1 style="text-align:center;">Dynamic content here</h1-->
-    <div id=content-area class="container">
+    <div class="container">
     <?php
         require_once('routes.php');
     ?>
-
-<br/><br/>
-
-    <br><br>
     </div>
 
     <hr>
+</div>
     <!-- === END CONTENT === -->
     
     <!-- === BEGIN FOOTER === -->
@@ -227,7 +214,7 @@
     <!-- End footer area -->
    
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery.min.js"></script>
+    
     
     <!-- Bootstrap JS -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>

@@ -7,8 +7,8 @@ $_SESSION['newuser'] = $user;
 
 ?>
 <div class="block" style="text-align:center;">
-    <h1>Welcome to Cheffinz</h1>
+    <h1 class="heading">Welcome to Cheffinz</h1>
     <p>
-        Cheffinz is a web application that aids in meal preparation and weekky meal plans
+        Cheffinz is a web application that aids in meal preparation and weekly meal plans
     </p>
 </div>
