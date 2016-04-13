@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     
     <!-- Custom CSS -->
-<<<<<<< HEAD
     <link rel="stylesheet" href="static/css/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/style1.css">
@@ -49,10 +48,8 @@
         <link rel="stylesheet" href="static/css/style.css'?>">
         <link rel="stylesheet" href="static/css/style-wide.css'?>">
     </noscript>
-    
-=======
     <link rel="stylesheet" href="static/css/web2py.css">    
->>>>>>> bb8251b1f7732de43732d3b142eb272fe6b22573
+
 </head>
 <body>
 
@@ -136,21 +133,18 @@
     
     <!-- === CONTENT === -->
     <hr>
-<<<<<<< HEAD
 <br/><br/>
-=======
->>>>>>> bb8251b1f7732de43732d3b142eb272fe6b22573
+
     <!--h1 style="text-align:center;">Dynamic content here</h1-->
-    <div id=content-area class="container">
+    <div class="container">
     <?php
         require_once('routes.php');
     ?>
-<<<<<<< HEAD
 <br/><br/>
-=======
+
     <br><br>
     </div>
->>>>>>> bb8251b1f7732de43732d3b142eb272fe6b22573
+
     <hr>
     <!-- === END CONTENT === -->
     
