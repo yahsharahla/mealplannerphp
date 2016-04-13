@@ -8,7 +8,7 @@ class Account {
     private $preferred_calories;
     private $list_of_meals;
     private $meal_plan;
-    private $ingredients_in_kitchen
+    private $ingredients_in_kitchen;
     
     public function __construct($fname, $lname, $email, $password, $calories){
         $this->first_name = $fname;

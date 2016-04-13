@@ -91,7 +91,12 @@
         public function createmeal(){
             //TODO: Implement here
             $list_of_ingredients = array();
-            for ($i=0; i<){}
+            if(!empty($_POST[''])){
+            for (_$POST['']){}
+                
+            } else {
+                
+            }
             $name = $_POST['name'];
             $type = $_POST['type'];
             $calories = $_POST['calories'];
