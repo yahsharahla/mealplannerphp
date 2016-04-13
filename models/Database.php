@@ -18,6 +18,20 @@ class Database {
         return $this->db;
     }
     
+    public function beginTransaction(){
+        $this->db->beginTransaction();
+    }
+    
+    
+    public function commitChanges(){
+        $this->db->commit();
+    }
+    
+    public function rollbackUpdate(){
+        $status = $this->db->rollBack();
+        return $status;
+    }
+    
      public function query($sql){
          try {
             $stmt = $this->db->prepare($sql);

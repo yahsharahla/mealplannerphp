@@ -37,13 +37,13 @@
             }
         }
         
-        public function createaccount(){
+        public function register(){
             //TODO: Implement here
             $email = $_POST['email'];
-            $first_name = $_POST['fname'];
-            $last_name = $_POST['lname'];
+            $first_name = $_POST['first_name'];
+            $last_name = $_POST['last_name'];
             $password = $_POST['password'];
-            $preferred_calories = $_POST['preffered'];
+            $preferred_calories = $_POST['calories'];
             $hash = sha1($password);
             $database = new Database('localhost', 'meal_planner', 'root', '');
             $user = $_SESSION['anonuser'];
@@ -51,7 +51,7 @@
                 $database->beginTransaction();
                 $userId = $user->getUserId();
                 $sql = "insert into user values('$userId');";
-                $result = database->update($sql);
+                $result = $database->update($sql);
                 if ($result < 0){
                     $database->rollbackUpdate();
                     echo '<script>alert(\'Unknown error occurred\');
@@ -60,7 +60,7 @@
                 }
                 $sql = "insert into account values($preferred_calories, '$first_name, 
                 '$last_name', '$email', '$hash');";
-                $result = database->update($sql);
+                $result = $database->update($sql);
                 if ($result < 0){
                     $database->rollbackUpdate();
                     echo '<script>alert(\'Unknown error occurred\');
@@ -68,7 +68,7 @@
                     return;
                 }
                 $sql = "insert into create_account values('$userId', '$email');";
-                $result = database->update($sql);
+                $result = $database->update($sql);
                 if ($result < 0){
                     $database->rollbackUpdate();
                     echo '<script>alert(\'Unknown error occurred\');
@@ -92,7 +92,9 @@
             //TODO: Implement here
             $list_of_ingredients = array();
             if(!empty($_POST[''])){
-            for (_$POST['']){}
+            foreach ($_POST[''] as $variable){
+                
+            }
                 
             } else {
                 
