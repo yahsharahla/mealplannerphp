@@ -23,11 +23,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="static/css/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="static/css/style.css">
-    <link rel="stylesheet" href="static/css/style1.css">
-    <link rel="stylesheet" href="static/css/responsive.css">
-    
+    <link rel="stylesheet" href="static/css/web2py.css">    
 </head>
 <body>
 
@@ -111,14 +107,13 @@
     
     <!-- === CONTENT === -->
     <hr>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
     <!--h1 style="text-align:center;">Dynamic content here</h1-->
+    <div id=content-area class="container">
     <?php
         require_once('routes.php');
     ?>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
+    <br><br>
+    </div>
     <hr>
     <!-- === END CONTENT === -->
     
@@ -201,15 +196,5 @@
     
     <!-- Bootstrap JS -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    
-    <!-- jQuery sticky menu -->
-    <script src="static/js/owl.carousel.min.js"></script>
-    <script src="static/js/jquery.sticky.js"></script>
-               
-    <!-- jQuery easing -->
-    <script src="static/js/jquery.easing.1.3.min.js"></script>
-    
-    <!-- Main Script -->
-    <script src="static/js/main.js"></script>
   </body>
 </html>
