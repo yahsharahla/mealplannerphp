@@ -10,21 +10,23 @@
                                 <form id="login-form-wrap" class="login collapse" method="post">
 
                                     <p class="form-row form-row-first">
-                                        <label for="email">Email Address <span class="required">*</span>
-                                        </label>
+                                        <table>
+                                        <tr><td><label for="email">Email Address <span class="required">*</span>
+                                            </label></td><td class="in">
                                         <input type="email" id="username"  placeholder="someone@example.com"  name="email" class="input-text">
-                                    </p>
+                                            </p></td></tr>
                                     <p class="form-row form-row-last">
-                                        <label for="password">Password <span class="required">*</span>
-                                        </label>
+                                        <tr><td><label for="password">Password <span class="required">*</span>
+                                            </label></td><td class="in">
                                         <input type="password" id="password" name="password" class="input-text" placeholder="Password">
-                                    </p>
+                                </p></td></tr><tr><td colspan="2">
                                     <div class="clear"></div>
 
 
                                     <p class="form-row">
                                         <input type="submit" class="btn" value="Login" name="submit">
-                                    </p>
+                        </p></td></tr>
+                                    </table>
                                     <p class="lost_password">
                                         <a href="?controller=pages&action=reset">Lost your password?</a>
                                     </p>

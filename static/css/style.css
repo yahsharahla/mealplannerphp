@@ -27,8 +27,18 @@ h6 {
     font-weight: 700;
     margin: 0 0 15px;
 }
-body { font-family: 'Titillium Web', sans-serif; }
+#body { 
+    font-family: 'Titillium Web', sans-serif;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
 
+.input-text {
+    border-radius: 10px;
+    width: 222px;
+}
 
 
 .header-area {
@@ -1031,4 +1041,11 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
 
 }
 
+.required {
+    color: red;
+}
+
+.in {
+    padding-left: 15px;
+}
 

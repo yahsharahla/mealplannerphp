@@ -47,12 +47,11 @@
         <link rel="stylesheet" href="static/css/skel.css'?>">
         <link rel="stylesheet" href="static/css/style.css'?>">
         <link rel="stylesheet" href="static/css/style-wide.css'?>">
-    </noscript>
-    <link rel="stylesheet" href="static/css/web2py.css">    
+    </noscript>   
 
 </head>
 <body>
-
+<div id="body">
     
             <!-- Top Menu -->
          <div class="header-area">
@@ -146,6 +145,7 @@
     </div>
 
     <hr>
+</div>
     <!-- === END CONTENT === -->
     
     <!-- === BEGIN FOOTER === -->
