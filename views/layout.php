@@ -4,7 +4,7 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-    <title>Application Title</title>
+    <title>Cheffinz</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,10 +23,10 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="source-files/css/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="source-files/css/style.css">
-    <link rel="stylesheet" href="source-files/css/style1.css">
-    <link rel="stylesheet" href="source-files/css/responsive.css">
+    <link rel="stylesheet" href="static/css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/style1.css">
+    <link rel="stylesheet" href="static/css/responsive.css">
     
 </head>
 <body>
@@ -34,18 +34,67 @@
     
             <!-- Top Menu -->
          <div class="header-area">
+             
+             <!-- == CAROUSEL START ==-->
+             
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img  src="static/images/cheffings.jpg" alt="cheffings" class = "img-responsive" >
+      <div class="carousel-caption">
+        <h3>Add Meals</h3>
+        <p>Its possible for you to add meals according to your weekly schedule</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="static/images/cheffings1.jpg"  alt="cheffings" class = "img-responsive">
+      <div class="carousel-caption">
+         <h3>Add Meals</h3>
+        <p>Its possible for you to add meals according to your weekly schedule</p>
+      </div>    
+    </div>
+    <div class="item">
+      <img src="static/images/cheffings2.gif"  alt="cheffings" class = "img-responsive">
+      <div class="carousel-caption">
+         <h3>Add Meals</h3>
+        <p>Its possible for you to add meals according to your weekly schedule</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+             
+             <!-- == CAROUSEL END ==-->
+             
             <div class="container">
             <div class="row">
                 <div>
                     <div class="">
                          <ul class="nav navbar-nav pull-left">
                              <div class="logo">
-                             <li class="active"><h1><a href="#"><span>Application Name</span></a></h1></li>
+                             <li class="active"><h1><a href="#"><span>Cheffinz<sup>TM</sup></span></a></h1></li>
                                  </div>
-                             <li><a href="#">header items</a></li>
-                             <li><a href="#">header items</a></li>
-                             <li><a href="#">header items</a></li>
-                             <li><a href="#">header items</a></li>
+                             <li><a href="?controller=pages&action=index">Home</a></li>
+                             <li><a href="?controller=pages&action=about">How it Works</a></li>
+                             <li><a href="#">Create Meal</a></li>
+                             <li><a href="?controller=pages&action=user">Login</a></li>
                         </ul>
                     </div>
                </div>
@@ -64,9 +113,9 @@
     <hr>
 <br/><br/><br/><br/>
 <br/><br/><br/><br/>
-    <h1 style="text-align:center;">Dynamic content here</h1>
+    <!--h1 style="text-align:center;">Dynamic content here</h1-->
     <?php
-        require_once('views/layout.php');
+        require_once('routes.php');
     ?>
 <br/><br/><br/><br/>
 <br/><br/><br/><br/>
@@ -154,13 +203,13 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     
     <!-- jQuery sticky menu -->
-    <script src="source-files/js/owl.carousel.min.js"></script>
-    <script src="source-files/js/jquery.sticky.js"></script>
+    <script src="static/js/owl.carousel.min.js"></script>
+    <script src="static/js/jquery.sticky.js"></script>
                
     <!-- jQuery easing -->
-    <script src="source-files/js/jquery.easing.1.3.min.js"></script>
+    <script src="static/js/jquery.easing.1.3.min.js"></script>
     
     <!-- Main Script -->
-    <script src="source-files/js/main.js"></script>
+    <script src="static/js/main.js"></script>
   </body>
 </html>

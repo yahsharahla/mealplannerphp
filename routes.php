@@ -22,7 +22,8 @@
 
   // just a list of the controllers we have and their actions
   // we consider those "allowed" values
-  $controllers = array('pages' => ['index'],
+  $controllers = array('pages' => ['index', 'error', 'about', 'addmeal', 'foodspace',
+                                   'generate', 'groceries', 'user'],
                         'control' => ['']);
 
   // check that the requested controller and action are both allowed

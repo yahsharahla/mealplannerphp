@@ -1,4 +1,3 @@
-{{extend 'layout.html'}}
 <div class = "container-fluid">
     <h1>HOW CAN WE HELP?</h1>
     <p>
