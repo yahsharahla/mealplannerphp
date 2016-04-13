@@ -5,17 +5,17 @@
             require_once('views/pages/index.php');
         }
         
-        
         public function error(){
             require_once('views/pages/404.php');
         }
-        
         
         public function about(){
             require_once('views/pages/about.php');
         }
                                        
         public function addmeal(){
+            $ingredients = $this->fetch_ingredients();
+            $_SESSION['ingredients'] = $ingredients;
             require_once('views/pages/addmeal.php');
         }
                                        
@@ -33,6 +33,10 @@
                                        
         public function user(){
             require_once('views/pages/user.php');
+        }
+        
+        private function fetch_ingredients(){
+            //TODO: Some database stuff
         }
                                        
             

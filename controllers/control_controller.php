@@ -30,7 +30,6 @@
     }
         
         public function logout(){
-            //TODO: Implement here
             if (isset($_SESSION['user'])){
                 unset($_SESSION['user']);
                 echo '<script>window.location.href = "?controller=pages&action=index";</script>';
@@ -55,9 +54,9 @@
                 echo $result;
                 if ($result < 0){
                     $database->rollbackUpdate();
-                    /*echo '<script>alert(\'Unknown error occurred\');
+                    echo '<script>alert(\'Unknown error occurred\');
                     window.location.href = "?controller=pages&action=user";</script>';
-                    return;*/
+                    return;
                 }
                 $sql = "insert into account values($preferred_calories, '$first_name', 
                 '$last_name', '$email', '$hash');";
@@ -65,18 +64,18 @@
                 echo $result;
                 if ($result < 0){
                     $database->rollbackUpdate();
-                    /*echo '<script>alert(\'Unknown error occurred\');
+                    echo '<script>alert(\'Unknown error occurred\');
                     window.location.href = "?controller=pages&action=user";</script>';
-                    return;*/
+                    return;
                 }
                 $sql = "insert into create_account values('$userId', '$email');";
                 $result = $database->update($sql);
                 echo $result;
                 if ($result < 0){
                     $database->rollbackUpdate();
-                    /*echo '<script>alert(\'Unknown error occurred\');
+                    echo '<script>alert(\'Unknown error occurred\');
                     window.location.href = "?controller=pages&action=user";</script>';
-                    return;*/
+                    return;
                 } else {
                     $database->commitChanges();
                 }
@@ -92,15 +91,30 @@
         }
         
         public function createmeal(){
-            //TODO: Implement here
-            $list_of_ingredients = array();
-            if(!empty($_POST[''])){
-            foreach ($_POST[''] as $variable){
+            $user_ingredients = array();
+            if(!empty($_POST['ingredients'])){
+                foreach ($_POST['ingredients'] as $ingredient_name){
+                    $ingredient = new FoodItem($ingredient_name, 0);
+                    $ingredient->isInKitchen();
+                array_push($user_ingredients, $ingredient);
+                }
+                $database = new Database('localhost', 'meal_planner', 'root', '');
+                if(gettype($database->get_db()) != 'int'){
+                    $system_ingredients = $_SESSION['ingredients'];
+                    foreach($user_ingredients as $user_ingredient){
+                        $item_name = $user_ingredient->getName();
+                        $sql = "select * from food_item natural join ingredients natural join recipe 
+                        where item_name='$item_name';"
+                    }
+                } else {
+                    echo '<script>alert(\'Unknown error occurred\');
+                    window.location.href = "?controller=pages&action=addmeal";</script>';
+                }
                 
-            }
                 
             } else {
-                
+                echo '<script>alert(\'Please make a selection\');
+                    window.location.href = "?controller=pages&action=addmeal";</script>';
             }
             $name = $_POST['name'];
             $type = $_POST['type'];
