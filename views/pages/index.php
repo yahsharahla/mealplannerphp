@@ -3,7 +3,7 @@
   and store it in session variable*/
 $time = round(microtime(true) * 1000);
 $user = new User($time);
-$_SESSION['newuser'] = $user;
+$_SESSION['anonuser'] = $user;
 
 ?>
 <div class="block" style="text-align:center;">
